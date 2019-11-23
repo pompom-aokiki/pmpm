@@ -1,8 +1,12 @@
 {
   "name": "blog",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.88.0"
+  },
   "engines": {
+    "node":"8.11.1",
+    "npm": "5.6.0",
     "yarn": "1.x"
   },
   "scripts": {
