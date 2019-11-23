@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="col-md-3 margin-top-5 article-block margin-bottom-5">
+      <%= image_tag 'cat2.jpg', class: 'img-responsive '%>
+      <h1 class="text-font"><%= @article.title %></h1>
+      <div>
+        <%= simple_format @article.body %>
+      <p class="title-font"><%= @article.body %></p>
+      <span>
+        <%= @article.created_at.strftime("%Y年 %m月 %d日") %>
+      </span>
+    </div>
+      <%= link_to '編集' , edit_article_path(@article), class: 'btn btn-primary', style: 'margin-bottom:10px' %>
+      <%= link_to '削除' , article_path(@article),method: :delete, data: {confirm: "削除しますか？"} , class: 'btn btn-danger', style: 'margin-bottom:10px' %>
+    </div>
+</div>

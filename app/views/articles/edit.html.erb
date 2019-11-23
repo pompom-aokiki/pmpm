@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="text-center"> ブログの編集</h1>
+  <%= image_tag 'cat.jpeg', class: 'img-responsive img-center'%>
+  <div class="col-md-3 margin-top-5 title-font article-block margin-bottom-5">
+    <div class="padding-bottom-15">
+      <%= render 'form', article: @article %>
+    </div>
+  </div>
+</div>
