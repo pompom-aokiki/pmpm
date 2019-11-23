@@ -10,6 +10,8 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "postinstall": "cd ./frontend && yarn && yarn run webpack --config ./webpack.config.js --mode production"
+    "postinstall": "cd ./frontend && yarn && yarn run webpack --config ./webpack.config.js --mode production",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1"
   }
 }
