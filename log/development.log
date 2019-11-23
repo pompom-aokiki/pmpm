@@ -2873,3 +2873,22 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 849ms (Views: 826.8ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for ::1 at 2019-11-23 11:21:05 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aoki/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+  ↳ app/views/articles/index.html.erb:3
+  Rendered articles/index.html.erb within layouts/application (501.6ms)
+Completed 200 OK in 710ms (Views: 696.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/articles/new" for ::1 at 2019-11-23 11:21:14 +0900
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (32.1ms)
+  Rendered articles/new.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 116ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
